@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Socol_Andreea_Lab2.Data;
 using Socol_Andreea_Lab2.Models;
@@ -19,7 +20,8 @@ namespace Socol_Andreea_Lab2.Pages.Books
             _context = context;
         }
 
-        public IList<Book> Book { get;set; } = default!;
+        public IList<Book> Book { get;set; }
+        public SelectList AuthorList { get; set; }
 
         public async Task OnGetAsync()
         {
