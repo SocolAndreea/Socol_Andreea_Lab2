@@ -45,13 +45,6 @@ namespace Socol_Andreea_Lab2.Pages.Books
         }
         public SelectList AuthorList { get; set; }
 
-        public async Task OnGetAsync()
-        {
-
-            if (_context.Book != null)
-            {
-                Book = await _context.Book.Include(b=>b.Publisher).ToListAsync();
-            }
-        }
+      
     }
 }

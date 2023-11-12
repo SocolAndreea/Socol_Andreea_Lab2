@@ -20,5 +20,7 @@ namespace Socol_Andreea_Lab2.Data
 
         public DbSet<Socol_Andreea_Lab2.Models.BookCategory>? BookCategory { get; set; }
         public DbSet<Socol_Andreea_Lab2.Models.Category>? Category { get; set; }
+        public DbSet<Socol_Andreea_Lab2.Models.Member>? Member { get; set; }
+        public DbSet<Socol_Andreea_Lab2.Models.Borrowing>? Borrowing { get; set; }
     }
 }
